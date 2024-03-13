@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Navbar Styles */
+nav {
+    background-color: #2d2d2d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav ul {
+    display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav ul li {
+    list-style: none;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:hover {
+    color: bisque;
+}
+
+/* Works Styling */
+.works {
+   display: flex;
+}
+
+.work {
+    padding: 20px;
+}
+
+.work-heading {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+/* Skills Styling */
+.skills-heading {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.skills {
+    width: 70%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.skills td, .skills th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.skills tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.skills tr:hover {
+    background-color: #ddd;
+}
+
+.skills th {
+    padding: 12px 8px;
+    text-align: left;
+    background-color: #5bb600;
+    color: white;
+}
+
+/* Experience Styling */
+.exp-heading {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.exp {
+    margin: 15px;
+    padding: 10px;
+    border: 2px solid #d2d2d2;
+    border-radius: 10px;
+    box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.22);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2d2d2d;
+    color: white;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 10px;
 }
